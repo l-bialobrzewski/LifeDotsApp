@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <rect width="400" height="400" fill="#0b1020"/>
+  <!-- 3x3 dot grid: dot 56px, gap 22px, centered in 400x400 (safe zone ~75%) -->
+  <!-- row 0 -->
+  <rect x="94" y="94" width="56" height="56" rx="4" fill="#ffffff26"/>
+  <rect x="172" y="94" width="56" height="56" rx="4" fill="#ffffff26"/>
+  <rect x="250" y="94" width="56" height="56" rx="4" fill="#ffffff26"/>
+  <!-- row 1 -->
+  <rect x="94" y="172" width="56" height="56" rx="4" fill="#ffffff26"/>
+  <rect x="172" y="172" width="56" height="56" rx="4" fill="#10b981"/>
+  <rect x="250" y="172" width="56" height="56" rx="4" fill="#ffffff26"/>
+  <!-- row 2 -->
+  <rect x="94" y="250" width="56" height="56" rx="4" fill="#ffffff26"/>
+  <rect x="172" y="250" width="56" height="56" rx="4" fill="#ffffff26"/>
+  <rect x="250" y="250" width="56" height="56" rx="4" fill="#ffffff26"/>
+</svg>

@@ -1,0 +1,20 @@
+/**
+ * Sentry — klient (przeglądarka). Aktywne tylko gdy NEXT_PUBLIC_SENTRY_DSN jest ustawiony.
+ * Scrubbing PII: nie logujemy treści notatek ani mood_value (patrz docs/devops/environments.md).
+ */
+import * as Sentry from "@sentry/nextjs";
+
+const dsn = process.env.NEXT_PUBLIC_SENTRY_DSN;
+
+if (dsn) {
+  Sentry.init({
+    dsn,
+    tracesSampleRate: 0.1,
+    beforeSend(event) {
+      if (event.request?.data) {
+        delete event.request.data;
+      }
+      return event;
+    },
+  });
+}
