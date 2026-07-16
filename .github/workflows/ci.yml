@@ -13,7 +13,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
           cache: "npm"
 
       - name: Install dependencies
@@ -26,11 +26,15 @@ jobs:
         run: npm run typecheck
 
       - name: Build
+        # Wartosci ponizej to nieszkodliwe placeholdery wylacznie do prerenderu
+        # stron statycznych w CI (np. /login tworzy klienta Supabase w czasie
+        # builda). To NIE sa sekrety - realne wartosci ustawia Vercel per srodowisko.
+        # Mozna nadpisac je sekretami repo, jesli build ma uzywac konkretnego projektu.
         run: npm run build
         env:
-          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.SUPABASE_URL_CI_PLACEHOLDER }}
-          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY_CI_PLACEHOLDER }}
-          NOTE_ENCRYPTION_KEY: ${{ secrets.NOTE_ENCRYPTION_KEY_CI_PLACEHOLDER }}
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.SUPABASE_URL_CI_PLACEHOLDER || 'https://placeholder.supabase.co' }}
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY_CI_PLACEHOLDER || 'placeholder-anon-key' }}
+          NOTE_ENCRYPTION_KEY: ${{ secrets.NOTE_ENCRYPTION_KEY_CI_PLACEHOLDER || 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=' }}
 
   security-scan:
     runs-on: ubuntu-latest
