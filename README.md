@@ -17,7 +17,7 @@ MVP — patrz [docs/spec.md](./docs/spec.md).
 
 ## Stack
 
-- Next.js 14 (App Router) + TypeScript + Tailwind CSS
+- Next.js 16 (App Router) + TypeScript + Tailwind CSS
 - Supabase (Postgres + Auth + Storage), region **EU (Frankfurt, eu-central-1)**
 - Hosting: Vercel
 - Szyfrowanie notatek: AES-256-GCM po stronie serwera (`lib/encryption.ts`)
@@ -28,7 +28,7 @@ Wymagania: Node.js ≥ 18.18, konto Supabase, (opcjonalnie) Supabase CLI.
 
 ```bash
 # 1. Instalacja zależności
-npm install
+npm ci
 
 # 2. Konfiguracja środowiska
 cp .env.example .env.local
