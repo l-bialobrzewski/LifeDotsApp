@@ -101,9 +101,10 @@ export default function WaitlistForm() {
         />
         <span>
           Wyrażam zgodę na otrzymywanie e-maila o starcie bety LifeDots.
-          Administratorem danych jest [do uzupełnienia — patrz polityka
-          prywatności]. Podstawa: zgoda (art. 6 ust. 1 lit. a RODO). Mogę
-          wycofać zgodę w dowolnym momencie.{" "}
+          Administratorem danych jest Łukasz Białobrzewski (projekt LifeDots),
+          ul. Kozłowskiego „Lasa” 1/13, 07-410 Ostrołęka; kontakt:
+          lifedots.app@gmail.com. Podstawa: zgoda (art. 6 ust. 1 lit. a RODO).
+          Mogę wycofać zgodę w dowolnym momencie.{" "}
           <Link href="/privacy" className="underline">
             Polityka prywatności
           </Link>

@@ -10,8 +10,11 @@ weryfikacji przez prawnika przed publikacją**
 
 ## 1. Administrator danych
 
-[Nazwa podmiotu / imię i nazwisko przedsiębiorcy, adres, NIP/KRS, e-mail kontaktowy]
-— **do uzupełnienia przed publikacją**.
+**Łukasz Białobrzewski** — osoba fizyczna prowadząca projekt LifeDots (bez wpisu do
+CEIDG/KRS).
+
+- Adres: ul. Kozłowskiego „Lasa” 1/13, 07-410 Ostrołęka
+- E-mail kontaktowy (sprawy ochrony danych): [lifedots.app@gmail.com](mailto:lifedots.app@gmail.com)
 
 ## 2. Jakie dane przetwarzamy
 
@@ -60,7 +63,7 @@ Masz prawo do: dostępu do danych (art. 15), sprostowania (art. 16), usunięcia 
 17), ograniczenia przetwarzania (art. 18), przenoszenia danych (art. 20), wycofania
 zgody w każdym momencie (art. 7(3)) oraz wniesienia sprzeciwu (art. 21). Możesz
 zrealizować prawo dostępu/przenoszenia i usunięcia samoobsługowo w Ustawieniach
-konta. W innych przypadkach napisz na [adres e-mail kontaktowy].
+konta. W innych przypadkach napisz na [lifedots.app@gmail.com](mailto:lifedots.app@gmail.com).
 
 Masz również prawo wniesienia skargi do organu nadzorczego — w Polsce: Prezes
 Urzędu Ochrony Danych Osobowych (UODO), ul. Stawki 2, 00-193 Warszawa.
@@ -78,4 +81,8 @@ odpowiednim wyprzedzeniem przed wejściem w życie.
 
 ## 9. Kontakt
 
-[adres e-mail / dane kontaktowe administratora, opcjonalnie Inspektora Ochrony Danych]
+Administrator: Łukasz Białobrzewski  
+E-mail: [lifedots.app@gmail.com](mailto:lifedots.app@gmail.com)  
+Adres: ul. Kozłowskiego „Lasa” 1/13, 07-410 Ostrołęka  
+
+Nie wyznaczono Inspektora Ochrony Danych (IOD).

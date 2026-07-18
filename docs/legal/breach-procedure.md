@@ -36,13 +36,13 @@ wysokiego ryzyka.**
 7. **Analiza post-mortem** — przyczyna źródłowa, poprawki techniczne/proceduralne,
    aktualizacja DPIA jeśli zmienia się profil ryzyka.
 
-## 3. Role i kontakty (do uzupełnienia przed launchem)
+## 3. Role i kontakty
 
 | Rola | Osoba | Kontakt |
 |---|---|---|
-| Osoba decyzyjna ds. incydentu | [imię/rola] | [e-mail/telefon] |
-| Kontakt techniczny (rotacja kluczy, logi) | [imię/rola] | [e-mail] |
-| Kontakt prawny / zgłoszenie do UODO | [imię/rola lub kancelaria] | [e-mail] |
+| Osoba decyzyjna ds. incydentu | Łukasz Białobrzewski | lifedots.app@gmail.com |
+| Kontakt techniczny (rotacja kluczy, logi) | Łukasz Białobrzewski | lifedots.app@gmail.com |
+| Kontakt prawny / zgłoszenie do UODO | Łukasz Białobrzewski (ew. kancelaria zewnętrzna) | lifedots.app@gmail.com |
 
 Zgłoszenia do UODO: [https://uodo.gov.pl](https://uodo.gov.pl) (formularz zgłoszenia
 naruszenia ochrony danych osobowych).

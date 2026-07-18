@@ -17,6 +17,22 @@ export default function PrivacyPage() {
         <code className="rounded bg-white/10 px-1">docs/legal/privacy-policy.md</code>
         .
       </p>
+      <h2 className="mb-2 mt-6 text-lg font-medium text-white">
+        Administrator danych
+      </h2>
+      <p className="mb-4">
+        Łukasz Białobrzewski — osoba fizyczna prowadząca projekt LifeDots.
+        <br />
+        Adres: ul. Kozłowskiego „Lasa” 1/13, 07-410 Ostrołęka
+        <br />
+        E-mail:{" "}
+        <a
+          href="mailto:lifedots.app@gmail.com"
+          className="underline text-white"
+        >
+          lifedots.app@gmail.com
+        </a>
+      </p>
       <h2 className="mb-2 mt-6 text-lg font-medium text-white">Najważniejsze punkty</h2>
       <ul className="ml-5 list-disc space-y-2">
         <li>

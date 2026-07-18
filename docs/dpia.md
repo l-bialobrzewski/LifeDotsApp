@@ -14,7 +14,7 @@ kategorii — art. 9 RODO)
 
 | Pole | Wartość |
 |---|---|
-| Administrator danych | [Nazwa spółki/osoby prowadzącej działalność — do uzupełnienia] |
+| Administrator danych | Łukasz Białobrzewski (osoba fizyczna, projekt LifeDots); ul. Kozłowskiego „Lasa” 1/13, 07-410 Ostrołęka; lifedots.app@gmail.com |
 | Cel przetwarzania | Umożliwienie użytkownikowi wizualizacji życia i śledzenia własnego nastroju/wydarzeń w czasie (funkcja główna produktu) |
 | Kategorie danych | (a) dane konta: e-mail, data urodzenia; (b) **dane szczególnej kategorii**: wpisy nastroju (`mood_value`), notatki tekstowe (`note`), tagi opisujące kontekst życiowy |
 | Kategorie osób | Użytkownicy końcowi aplikacji webowej, dorośli (18+, patrz sekcja 6) |

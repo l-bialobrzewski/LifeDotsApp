@@ -10,7 +10,9 @@ Status wykonania setupu kampanii wiralowej. Powiązane:
 
 | Element | Status | Lokalizacja |
 |---|---|---|
-| Gate waitlist vs signup | ✅ | `NEXT_PUBLIC_LANDING_MODE=waitlist` (domyślnie); landing + redirect `/signup` |
+| Gate waitlist vs signup | ✅ | Zamrożone: [campaign-mode-decision.md](./campaign-mode-decision.md); `NEXT_PUBLIC_LANDING_MODE=waitlist` |
+| KPI 4 tygodnie | ✅ | [campaign-kpi.md](./campaign-kpi.md) — share rate + waitlist + WTP |
+| 10 PNG siatek demo | ✅ | [`assets/demo-grids/`](./assets/demo-grids/) — `npm run generate:demo-grids` |
 | Formularz waitlisty (e-mail + zgoda RODO) | ✅ | `components/WaitlistForm.tsx`, `app/api/waitlist/route.ts` |
 | Migracja tabeli waitlist | ✅ | `supabase/migrations/0003_waitlist.sql` |
 | Capture UTM (sessionStorage, bez cookies) | ✅ | `components/UtmCapture.tsx`, `lib/marketing/utm.ts` |
@@ -47,7 +49,7 @@ Każdy tydzień = 1 kropka. Świadomie. Prywatnie.
 
 1. **Deploy landingu** na `https://lifedots.app` (Vercel).
 2. **Supabase EU** — utwórz projekt Frankfurt, `npx supabase db push` (migracja `0003_waitlist`).
-3. **Uzupełnij `[do uzupełnienia]`** w polityce prywatności (administrator danych) i w klauzuli waitlisty.
+3. ~~Uzupełnij dane administratora~~ — **zrobione:** Łukasz Białobrzewski, lifedots.app@gmail.com (polityka, waitlista, DPIA, ROPA, ToS).
 4. **Tally waitlist (alternatywa)** — jeśli Supabase jeszcze nie gotowy: utwórz formularz Tally, ustaw `NEXT_PUBLIC_EXTERNAL_WAITLIST_URL`.
 5. **Ankieta WTP** — utwórz formularz wg [wtp-survey.md](./wtp-survey.md), ustaw `NEXT_PUBLIC_WTP_SURVEY_URL`.
 6. **Arkusz metryk** — skopiuj [virality-metrics-template.csv](./virality-metrics-template.csv) do Google Sheets.

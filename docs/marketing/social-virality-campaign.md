@@ -24,14 +24,17 @@ e-mail**.
 
 ## 2. Metryki go / no-go (po 4 tygodniach)
 
-| Metryka | Próg „jest sygnał” | Próg „mocny sygnał” |
-|---|---|---|
-| Średni view-through rate (3s+) na ≥15 filmach | ≥ 25% | ≥ 40% |
-| Share rate (udostępnienia / wyświetlenia) | ≥ 0,5% | ≥ 1,5% |
-| Save rate | ≥ 1% | ≥ 3% |
-| CTR do linku w bio / landing | ≥ 1% | ≥ 3% |
-| Konwersja landing → signup/waitlist | ≥ 15% | ≥ 30% |
-| Ankieta WTP (19–25 PLN/mies.) wśród rejestrujących | ≥ 20% „tak / raczej tak” | ≥ 40% |
+**KPI zamrożone (North Star):** share rate + zapisy waitlist + WTP — szczegóły i
+tabela decyzji: [campaign-kpi.md](./campaign-kpi.md). Followers / likes ≠ sukces.
+
+| Metryka | Próg „jest sygnał” | Próg „mocny sygnał” | KPI? |
+|---|---|---|---|
+| **Share rate** (udostępnienia / wyświetlenia) | ≥ 0,5% | ≥ 1,5% | **tak** |
+| **Konwersja landing → waitlist** + wolumen zapisów | ≥ 15% | ≥ 30% | **tak** |
+| **Ankieta WTP** (19 zł/mies.) | ≥ 20% „tak / raczej tak” | ≥ 40% | **tak** |
+| Średni view-through rate (3s+) na ≥15 filmach | ≥ 25% | ≥ 40% | pomocniczy |
+| Save rate | ≥ 1% | ≥ 3% | pomocniczy |
+| CTR do linku w bio / landing | ≥ 1% | ≥ 3% | pomocniczy |
 
 **Interpretacja:**
 
@@ -279,14 +282,13 @@ monetyzacji; ≥ 40% = mocny sygnał.
 
 ### Decyzja bazowa (podejmij PRZED czymkolwiek)
 
-- [ ] **Tryb kampanii = tylko waitlist e-mail.** Nie uruchamiaj publicznego signupu
-      z realnym logowaniem nastroju, dopóki nie odhaczysz [beta-launch-plan.md](./beta-launch-plan.md)
-      sekcja 2 (DPIA, Supabase EU + DPA, RLS, klucz szyfrowania, `/privacy` + `/terms`).
-      Wiral bez tego = zbierasz ruch, którego nie możesz legalnie obsłużyć.
-- [ ] Jesteś **administratorem danych** — Twoje dane (imię i nazwisko / nazwa
-      działalności, NIP, e-mail kontaktowy) muszą być podane tam, gdzie zbierasz
-      e-maile (klauzula informacyjna). Uzupełnij `[do uzupełnienia]` w
-      [privacy-policy.md](../legal/privacy-policy.md) sekcja 1 i [dpia.md](../dpia.md) sekcja 1.
+- [x] **Tryb kampanii = tylko waitlist e-mail.** Zamrożone:
+      [campaign-mode-decision.md](./campaign-mode-decision.md). Nie uruchamiaj
+      publicznego signupu z nastrojem, dopóki nie odhaczysz
+      [beta-launch-plan.md](./beta-launch-plan.md) sekcja 2.
+- [x] **Administrator danych** uzupełniony: Łukasz Białobrzewski,
+      lifedots.app@gmail.com, ul. Kozłowskiego „Lasa” 1/13, 07-410 Ostrołęka —
+      [privacy-policy.md](../legal/privacy-policy.md), waitlista, DPIA, ROPA.
 
 ### Konta i profil
 
@@ -330,12 +332,12 @@ monetyzacji; ≥ 40% = mocny sygnał.
 
 ### Bank wizualny (WYŁĄCZNIE dane fikcyjne)
 
-- [ ] 5–10 PNG siatek demo (różne „wieki”, gęstość) — **dane wymyślone, zero PII**
-- [ ] Zero prawdziwych notatek/tagów użytkowników w jakimkolwiek materiale
+- [x] **10 PNG siatek demo** — [`assets/demo-grids/`](./assets/demo-grids/);
+      regeneracja: `npm run generate:demo-grids`
+- [x] Zero prawdziwych notatek/tagów — skrypt generuje tylko kolory fikcyjne
 - [ ] 1–2 screeny flow: siatka + modal wpisu (bez czytelnej treści notatki)
-- [ ] Logo / wordmark + fonty i kolory z landingu
-- [ ] Muzyka **tylko z komercyjnej biblioteki TikTok/IG** (licencja platformy) —
-      nie wrzucaj cudzych utworów spoza (prawa autorskie)
+- [x] Logo / wordmark — [`assets/logo-avatar.svg`](./assets/logo-avatar.svg)
+- [ ] Muzyka **tylko z komercyjnej biblioteki TikTok/IG** (licencja platformy)
 - [ ] Jeśli pokazujesz twarz — tylko swoją; żadnych osób trzecich bez zgody na wizerunek
 
 ### Mikrokreatorzy (prawo PL / UOKiK)
@@ -376,9 +378,8 @@ warunkiem walidacji. Twój główny koszt to czas, nie budżet reklamowy.
 - **Dane art. 9 RODO (nastrój/notatki) = największe ryzyko.** Mitygacja: w kampanii
   zbierasz tylko e-mail na waitlistę; realne logowanie nastroju dopiero po
   odhaczeniu [beta-launch-plan.md](./beta-launch-plan.md) sekcja 2 i akceptacji DPIA.
-- **Jesteś administratorem danych:** musisz podać swoje dane (imię/nazwa działalności,
-  NIP, kontakt) w klauzuli informacyjnej i polityce prywatności — nie zostawiaj
-  `[do uzupełnienia]`.
+- **Jesteś administratorem danych:** dane uzupełnione (Łukasz Białobrzewski,
+  lifedots.app@gmail.com) — utrzymuj spójność w klauzuli waitlisty i polityce.
 - **Waitlist bez zgody/klauzuli = naruszenie:** e-mail na powiadomienie wymaga
   osobnej zgody (art. 6(1)(a)) + klauzuli art. 13 + narzędzia z DPA w UE.
 - **Cookie/pixel:** świadomie bez pixela — brak banera CMP, brak tego ryzyka.

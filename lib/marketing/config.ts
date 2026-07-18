@@ -1,11 +1,18 @@
 /**
  * Konfiguracja kampanii wiralowej (Tydzień 0+).
  * Patrz docs/marketing/social-virality-campaign.md i docs/marketing/week-0-setup.md
+ *
+ * ZAMROŻENIE: tryb kampanii = waitlist-only (bez publicznych danych nastroju).
+ * Patrz docs/marketing/campaign-mode-decision.md — nie przełączaj na signup
+ * przed odhaczeniem beta-launch-plan.md sekcja 2.
  */
 
 export type LandingMode = "waitlist" | "signup";
 
-/** Domyślnie waitlist — beta-launch-plan sekcja 2 nie spełniona. */
+/**
+ * Domyślnie waitlist. Wszystko inne niż dokładne "signup" → waitlist
+ * (bezpieczny fail-closed na czas kampanii / przed betą).
+ */
 export function getLandingMode(): LandingMode {
   const mode = process.env.NEXT_PUBLIC_LANDING_MODE;
   return mode === "signup" ? "signup" : "waitlist";

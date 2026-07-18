@@ -9,9 +9,10 @@ Legenda: `[x]` = zrobione w repo / gotowe · `[ ]` = wymaga ręcznej akcji
 
 ## Decyzja bazowa
 
-- [x] **Tryb kampanii = waitlist e-mail** — `NEXT_PUBLIC_LANDING_MODE=waitlist`, redirect `/signup`
+- [x] **Tryb kampanii = waitlist e-mail** — zamrożone: [campaign-mode-decision.md](./campaign-mode-decision.md); `NEXT_PUBLIC_LANDING_MODE=waitlist`, redirect `/signup`
+- [x] **KPI 4 tygodnie** — share rate + waitlist + WTP: [campaign-kpi.md](./campaign-kpi.md)
 - [ ] DPIA + beta checklist odhaczone przed pełnym signupiem — [beta-launch-plan.md](./beta-launch-plan.md) sekcja 2
-- [ ] Dane administratora uzupełnione w [privacy-policy.md](../legal/privacy-policy.md) i klauzuli waitlisty
+- [x] Dane administratora uzupełnione — Łukasz Białobrzewski; [privacy-policy.md](../legal/privacy-policy.md), `WaitlistForm`
 
 ---
 
@@ -58,17 +59,17 @@ Legenda: `[x]` = zrobione w repo / gotowe · `[ ]` = wymaga ręcznej akcji
 
 ## Bank wizualny (WYŁĄCZNIE dane fikcyjne)
 
-Folder docelowy: `docs/marketing/assets/` (utwórz przy produkcji materiałów).
+Folder: [`assets/demo-grids/`](./assets/demo-grids/).
 
-- [ ] 5–10 PNG siatek demo (wymyślone wieki / gęstość kolorów)
-- [ ] Zero prawdziwych notatek/tagów w materiałach
+- [x] **10 PNG siatek demo** (fikcyjne wieki 22–50, różna gęstość) — `assets/demo-grids/*.png`
+- [x] Zero prawdziwych notatek/tagów — generowane skryptem `npm run generate:demo-grids`
 - [ ] 1–2 screeny flow (siatka + modal — treść notatki nieczytelna / blur)
 - [x] Logo / wordmark — [`assets/logo-avatar.svg`](./assets/logo-avatar.svg) + [brand-avatar.md](./brand-avatar.md)
 - [x] Paleta: tło `#0b1020`, akcent `#10b981` (emerald-500), tekst `#e8ecf7`
 - [ ] Muzyka tylko z biblioteki TikTok/IG
 - [ ] Twarz tylko własna (jeśli w ogóle)
 
-**Jak wygenerować siatki demo:** zaloguj się lokalnie, wypełnij fikcyjny profil, użyj `ShareGridButton` — **nie publikuj prawdziwych notatek**.
+**Regeneracja siatek:** `npm run generate:demo-grids` → `scripts/generate-demo-grids.mjs`.
 
 ---
 

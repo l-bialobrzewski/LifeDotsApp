@@ -26,9 +26,9 @@ zgodności RODO — do odznaczenia przed każdym istotnym etapem (beta → publi
 - [ ] DPIA (`docs/dpia.md`) zatwierdzone
 - [ ] Polityka prywatności i regulamin — finalna wersja prawna opublikowana
       pod `/privacy` i `/terms`
-- [ ] Rejestr czynności przetwarzania (`docs/legal/ropa.md`) uzupełniony danymi
-      administratora
-- [ ] Procedura naruszeń (`docs/legal/breach-procedure.md`) — kontakty uzupełnione
+- [x] Rejestr czynności przetwarzania (`docs/legal/ropa.md`) — dane administratora
+      (Łukasz Białobrzewski) uzupełnione
+- [x] Procedura naruszeń (`docs/legal/breach-procedure.md`) — kontakty uzupełnione
 - [ ] Test end-to-end: rejestracja → zgoda → wpis → eksport danych → wycofanie
       zgody (usuwa wpisy) → usunięcie konta (usuwa wszystko)
 

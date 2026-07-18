@@ -5,8 +5,11 @@ publikacją**
 
 ## 1. Definicje i podmiot świadczący usługę
 
-[Nazwa podmiotu, adres, dane rejestrowe] — dalej "Usługodawca". "Usługa" oznacza
-aplikację webową LifeDots dostępną pod adresem [domena].
+**Łukasz Białobrzewski**, ul. Kozłowskiego „Lasa” 1/13, 07-410 Ostrołęka,
+e-mail: [lifedots.app@gmail.com](mailto:lifedots.app@gmail.com) — osoba fizyczna
+prowadząca projekt LifeDots (bez wpisu do CEIDG/KRS) — dalej „Usługodawca”.
+„Usługa” oznacza aplikację webową LifeDots dostępną pod adresem lifedots.app
+(lub innym wskazanym przez Usługodawcę).
 
 ## 2. Zakres usługi
 

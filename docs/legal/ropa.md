@@ -1,6 +1,7 @@
 # Rejestr Czynności Przetwarzania (RCP / ROPA) — art. 30 RODO
 
-Administrator: [Nazwa podmiotu] · Wersja: 1.0.0 · Wersja robocza
+Administrator: Łukasz Białobrzewski (projekt LifeDots), ul. Kozłowskiego „Lasa” 1/13,
+07-410 Ostrołęka, lifedots.app@gmail.com · Wersja: 1.0.0 · Wersja robocza
 
 | # | Czynność przetwarzania | Cel | Kategorie danych | Kategorie osób | Podstawa prawna | Odbiorcy / podprocesorzy | Okres przechowywania | Środki bezpieczeństwa |
 |---|---|---|---|---|---|---|---|---|
@@ -21,4 +22,4 @@ Administrator: [Nazwa podmiotu] · Wersja: 1.0.0 · Wersja robocza
 - Rejestr wymaga rewizji przy: dodaniu nowego podprocesora, zmianie celu
   przetwarzania, wprowadzeniu płatności (Stripe), wprowadzeniu analityki/AI na
   danych nastroju.
-- Właściciel rejestru: [osoba/rola odpowiedzialna, np. założyciel / IOD jeśli wyznaczony].
+- Właściciel rejestru: Łukasz Białobrzewski (założyciel; IOD niewyznaczony).
