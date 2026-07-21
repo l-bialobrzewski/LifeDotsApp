@@ -14,7 +14,8 @@ Status wykonania setupu kampanii wiralowej. Powiązane:
 | KPI 4 tygodnie | ✅ | [campaign-kpi.md](./campaign-kpi.md) — share rate + waitlist + WTP |
 | 10 PNG siatek demo | ✅ | [`assets/demo-grids/`](./assets/demo-grids/) — `npm run generate:demo-grids` |
 | Formularz waitlisty (e-mail + zgoda RODO) | ✅ | `components/WaitlistForm.tsx`, `app/api/waitlist/route.ts` |
-| Migracja tabeli waitlist | ✅ | `supabase/migrations/0003_waitlist.sql` |
+| Migracja waitlist (SQL-only, bez mood) | ✅ | [`scripts/waitlist-only.sql`](../../scripts/waitlist-only.sql) — wklej w Dashboard |
+| Instrukcja DPA + klucze + test | ✅ | [waitlist-supabase-setup.md](./waitlist-supabase-setup.md) |
 | Capture UTM (sessionStorage, bez cookies) | ✅ | `components/UtmCapture.tsx`, `lib/marketing/utm.ts` |
 | Szablony UTM + bio copy | ✅ | [utm-links.md](./utm-links.md), `lib/marketing/config.ts` |
 | Decyzja pixel vs UTM-only | ✅ | [tracking-decision.md](./tracking-decision.md) |

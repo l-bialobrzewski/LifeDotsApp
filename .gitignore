@@ -17,6 +17,9 @@
 /supabase/.temp
 /supabase/.branches
 
+# lokalny CLI (Windows binary)
+/.tools/
+
 # misc
 .DS_Store
 .cursor/
