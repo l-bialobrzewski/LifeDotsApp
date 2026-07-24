@@ -12,8 +12,6 @@ import { createClient } from "@/lib/supabase/client";
 
 export default function SignupForm() {
 
-  const supabase = createClient();
-
   const [email, setEmail] = useState("");
 
   const [password, setPassword] = useState("");
@@ -35,6 +33,8 @@ export default function SignupForm() {
     setError(null);
 
 
+
+    const supabase = createClient();
 
     const { error: signUpError } = await supabase.auth.signUp({
 
