@@ -32,7 +32,10 @@ export async function POST(request: Request) {
   }
 
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL?.trim() ?? "";
-  const serviceRole = process.env.SUPABASE_SERVICE_ROLE_KEY?.trim() ?? "";
+  const serviceRole =
+    process.env.SUPABASE_SERVICE_ROLE_KEY?.trim() ||
+    process.env.SUPABASE_SERVICE_ROLE?.trim() ||
+    "";
   if (!supabaseUrl || !serviceRole) {
     if (EXTERNAL_WAITLIST_URL) {
       return NextResponse.json(
