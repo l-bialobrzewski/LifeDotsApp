@@ -32,10 +32,7 @@ export async function POST(request: Request) {
   }
 
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL?.trim() ?? "";
-  const serviceRole =
-    process.env.SUPABASE_SERVICE_ROLE_KEY?.trim() ||
-    process.env.SUPABASE_SERVICE_ROLE?.trim() ||
-    "";
+  const serviceRole = process.env.SUPABASE_SERVICE_ROLE_KEY?.trim() ?? "";
   if (!supabaseUrl || !serviceRole) {
     if (EXTERNAL_WAITLIST_URL) {
       return NextResponse.json(
@@ -48,13 +45,7 @@ export async function POST(request: Request) {
       );
     }
     return NextResponse.json(
-      {
-        error: "Waitlist tymczasowo niedostępna. Spróbuj później.",
-        missing: {
-          NEXT_PUBLIC_SUPABASE_URL: !supabaseUrl,
-          SUPABASE_SERVICE_ROLE_KEY: !serviceRole,
-        },
-      },
+      { error: "Waitlist tymczasowo niedostępna. Spróbuj później." },
       { status: 503 }
     );
   }

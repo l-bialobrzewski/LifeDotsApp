@@ -23,6 +23,7 @@
 # misc
 .DS_Store
 .cursor/
+.cursorrules.txt
 *.pem
 npm-debug.log*
 .vercel

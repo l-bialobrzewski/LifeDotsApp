@@ -12,29 +12,6 @@ export default function LoginPage() {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
-  // #region agent log
-  fetch("http://127.0.0.1:7564/ingest/49210152-1b7f-468e-8ddd-e77a52c26829", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "X-Debug-Session-Id": "0cb82c",
-    },
-    body: JSON.stringify({
-      sessionId: "0cb82c",
-      runId: "pre-fix",
-      hypothesisId: "H2",
-      location: "app/(auth)/login/page.tsx:render",
-      message: "LoginPage render (no createClient at top-level)",
-      data: {
-        hasUrl: Boolean(process.env.NEXT_PUBLIC_SUPABASE_URL),
-        hasKey: Boolean(process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY),
-        phase: typeof window === "undefined" ? "server" : "browser",
-      },
-      timestamp: Date.now(),
-    }),
-  }).catch(() => {});
-  // #endregion
-
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setLoading(true);
